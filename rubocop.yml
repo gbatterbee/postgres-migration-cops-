@@ -1,0 +1,2 @@
+require:  ./lib/cops/add-indexes-concurrently
+          ./lib/cops/require_disable_ddl_transaction

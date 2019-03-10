@@ -2,11 +2,11 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'postgres/migration/cops/version'
+# require 'postgres/migration/cops/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'postgres-migration-cops'
-  spec.version       = Postgres::Migration::Cops::VERSION
+  spec.version       = '1.0.0' # Postgres::Migration::Cops::VERSION
   spec.authors       = ['G Batterbee']
   spec.email         = ['gbatterbee1@gmail.com']
 
