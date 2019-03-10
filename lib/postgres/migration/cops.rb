@@ -1,4 +1,6 @@
-require "postgres/migration/cops/version"
+# frozen_string_literal: true
+
+require 'postgres/migration/cops/version'
 
 module Postgres
   module Migration
