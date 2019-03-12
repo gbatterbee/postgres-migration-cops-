@@ -1,11 +1,14 @@
----
 sudo: false
 language: ruby
 cache: bundler
 gem: postgres-migration-cops
 rvm:
-  - 2.3.7
+- 2.3.7
 before_install: gem install bundler -v 2.0.1
 deploy:
   provider: rubygems
-  api_key: $RUBYGEMS_API_KEY
+  api_key:
+    secure: da5pQo+wO2tIE26GosGeU4m2Mn2KEx2id7vTDuA7Or77lujkZ54tYXIzVtoARgt30oE98idsflJrai15vyDWMXIpcsABFUMLC8Cm+kqEioWhoY7VhiysTv7Mai1Vw+pcpF9XSoXwB/LY9368bTa17XqaE0hnALZkPkmWANV5+9KLeUMyUfDdWJbIeQfKAHNpfRTkgbw4wuNpi5E1SDdN3apqpgF6g3iOJgzd3x+6JlFSdf5Ku6axy+M0UM7bOcFQx3Kjj6uEtL9rrk58TT+dKGj0F5JSmS7WVaBoY3oTEI0605C4E2/5R2S1jrzF9Xk8jrpzbiD7gBb6BaNTl1fGWieitRNgA/4+qdB+tSe+Kfj55nStUqn1Zd/Vo3ekCjxmyNMlfofdzAv+ENtG5mCndfHZmvPp1Cq+Zo/P8d6ynPwEiu5jZUOjrizvAf/HOK8262DaYO7lbZPT9Q6KwIx/NDp3KwdWCgCF1nJq3/SOOQfhXcnTCH5Zpnze14hY7zrx/eRjjdrSgFzXtqdqPl3twO9NqqQwxtdU2h0ThYSVnqg72v7nujj7RIqg/ieqEAXezhdPRZndA2+5ldTECwmwnEBxyPCvSZY+VhoLiOlWE49V74kGp2Ixpe4RJ/3a0Wc1Bc6pA2mkm+gA7lSskB+2Y+GdixNN8QnfvZRPOQf4lAs=
+  gem: postgres-migration-cops
+  on:
+    repo: gbatterbee/postgres-migration-cops-
